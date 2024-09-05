@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ffffff, #ffffff, #353535, #ffffff);
+  background-size: 400% 400%;
+  animation: backgradient 8s ease-in-out infinite;
+}
+
+.header {
+  padding-bottom: 8.5px;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 624px max-content;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.item1 .titulo {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.item1 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.item2 {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.item1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.item1 .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.item1 input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: background-color 1.5s ease, transform 1.5s ease;
+}
+
+@keyframes backgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#listaTarefas {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaTarefas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+#listaTarefas li:last-child {
+  border-bottom: none;
+}
+
+#listaTarefas li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#listaTarefas li label {
+  flex-grow: 1;
+}
+
+#listaTarefas li .concluido {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#listaTarefas li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#listaTarefas li button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,12 @@
+.message.hidden {
+    right: -20rem;
+    opacity: 0;
+    transition: right 0.5s, opacity 0.5s;
+  }
+  
+  .message {
+    background-color: cyan;
+    right: 0;
+    opacity: 1;
+  }
+  

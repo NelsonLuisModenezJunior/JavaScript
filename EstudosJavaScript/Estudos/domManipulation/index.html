@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .bg-blue {
+        background-color: rgb(159, 163, 247);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-blue" id="titulo">DOM</h1>
+
+    <form id="cadastrarJogo">
+      <h3>Cadastrar Novo Jogo</h3>
+      <label for="nome">Nome do jogo:</label>
+      <input type="text" name="nome" id="nome" />
+      <br /><br />
+      <label for="ano">Ano de Lançamento:</label>
+      <input type="text" name="ano" id="ano" />
+      <br /><br />
+      <label for="genero">Gênero:</label>
+      <input type="trext" name="genero" id="genero" />
+      <br /><br />
+      <button type="submit">Adicionar Jogo</button>
+    </form>
+
+    <hr>
+
+    <h2>Lista de jogos</h2>
+
+    <ul id="listaDeJogos"></ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>

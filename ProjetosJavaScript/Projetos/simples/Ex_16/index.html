@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 16</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-top: 20px;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 300px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      hr {
+        width: 80%;
+        border: 1px solid #ccc;
+      }
+
+      #listaTarefas {
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #listaTarefas li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      #listaTarefas li:last-child {
+        border-bottom: none;
+      }
+
+      #listaTarefas li input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      #listaTarefas li label {
+        flex-grow: 1;
+      }
+
+      #listaTarefas li .concluido {
+        text-decoration: line-through;
+        color: #999;
+      }
+
+      #listaTarefas li button {
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #listaTarefas li button:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minha lista de Tarefas</h1>
+    <form id="formTarefa">
+      <input type="text" id="inputTarefa" placeholder="Adicionar nova Tarefa" />
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+    <hr />
+    <section id="listaTarefas"></section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

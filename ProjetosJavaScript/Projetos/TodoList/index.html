@@ -1,0 +1,37 @@
+<!--Para iniciar o server.json "json-server --watch db.json"-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyToDoList</title>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <h1>Let's do this things</h1>
+    </div>
+    <div class="container">
+      <div class="item1">
+        <form id="formTarefa">
+          <div class="titulo">
+            <p>Acrescente uma nova tarefa</p>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="inputTarefa"
+              placeholder="Adicionar nova Tarefa"
+            />
+            <button type="submit">Adicionar Tarefa</button>
+          </div>
+        </form>
+      </div>
+      <div class="item2">
+        <section id="listaTarefas"></section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
